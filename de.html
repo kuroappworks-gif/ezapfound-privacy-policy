@@ -18,10 +18,10 @@
     <p>Diese Datenschutzerklärung gilt für die mobile Anwendung „ezapfound“ (im Folgenden „App“), die von KURO APP WORKS erstellt wurde. Die App ist ein einfacher Home-Launcher, der entwickelt wurde, um installierte Apps zu organisieren und Schnellzugriffs-Verknüpfungen für wichtige Kontakte zu erstellen.</p>
 
     <h2>1. Vom Nutzer bereitgestellte Informationen</h2>
-    <p>Die App sammelt, überträgt oder speichert keine personenbezogenen Daten auf unseren Servern. Nutzer können jedoch manuell die folgenden Informationen eingeben, die <strong>ausschließlich lokal auf Ihrem Gerät gespeichert</strong> werden:</p>
+    <p>Die App sammelt, überträgt oder speichert keine personenbezogenen Daten auf unseren Servern. Nutzer können jedoch die folgenden Informationen eingeben oder auswählen, die <strong>ausschließlich lokal auf Ihrem Gerät gespeichert</strong> werden:</p>
     <ul>
-        <li><strong>Informationen für Kontakt-Verknüpfungen:</strong> Namen und Telefonnummern, die vom Nutzer zum Erstellen von SOS- oder Kontakt-Verknüpfungen angegeben werden. Diese Daten werden nur für die Funktion „One-Tap-Dial“ verwendet.</li>
-        <li><strong>Erinnerungs-/Kalenderinformationen:</strong> Titel, Details, Datum, Uhrzeit und Farbeinstellungen für vom Nutzer erstellte Termine. Diese Daten dienen ausschließlich der Erinnerungs- und Kalenderfunktion.</li>
+        <li><strong>Informationen für Kontakt-Verknüpfungen:</strong> Namen und Telefonnummern, die vom Nutzer manuell eingegeben oder aus dem Kontaktbuch (Adressbuch) des Geräts ausgewählt wurden. Diese werden für die „One-Tap-Dial“-Funktion sowie für die Platzierung von Verknüpfungen auf dem Startbildschirm verwendet.</li>
+        <li><strong>Erinnerungs-/Kalenderinformationen:</strong> Titel, Details, Datum, Uhrzeit, Farbeinstellungen und verknüpfte Kontaktinformationen für vom Nutzer erstellte Termine. Diese werden ausschließlich für die Erinnerungsbenachrichtigungs- und Kalenderfunktion verwendet.</li>
     </ul>
 
     <h2>2. Automatisch erhobene Informationen / Nicht-personenbezogene Daten</h2>
@@ -29,19 +29,20 @@
     <ul>
         <li><strong>Informationen über installierte Apps:</strong> Paketnamen, App-Labels (Anzeigenamen) und Installationszeitpunkt der auf dem Gerät installierten Apps.</li>
         <li><strong>Nutzereinstellungen und Präferenzen:</strong> Konfigurationsdaten wie Kategorienamen, App-Sortierung, Design-/Schriftgrößeneinstellungen und Pfade (URIs) zu Hintergrundbildern.</li>
-        <li><strong>Backup-Daten:</strong> Bei Nutzung der Backup-Funktion wird basierend auf den Anweisungen des Nutzers eine JSON-Datei mit Kategorie- und App-Anordnungsinformationen im Gerätespeicher erstellt.</li>
+        <li><strong>Backup-Daten:</strong> Bei Nutzung der Backup-Funktion wird basierend auf den Anweisungen des Nutzers eine JSON-Datei mit Informationen zu Kategorien und Erinnerungen im Gerätespeicher erstellt.</li>
     </ul>
     <p><strong>Die oben genannten lokal gespeicherten Daten werden nicht an unsere Server oder Dritte übertragen, es sei denn, dies wird von den in Abschnitt 4 beschriebenen Drittanbietern verlangt.</strong></p>
 
     <h2>3. Verwendete Berechtigungen und deren Zweck</h2>
     <p>Die App benötigt die folgenden Berechtigungen und verwendet sie nur für die genannten Zwecke:</p>
     <ul>
+        <li><strong><code>android.permission.READ_CONTACTS</code>:</strong> Wird verwendet, um Namen und Telefonnummern beim Erstellen von Kontaktverknüpfungen oder beim Registrieren von Erinnerungen einfach aus dem Kontaktbuch des Geräts auszuwählen und abzurufen.</li>
         <li><strong><code>android.permission.INTERNET</code>:</strong> Erforderlich für die Anzeige von Werbung und die Verwaltung der Zustimmung.</li>
         <li><strong><code>com.google.android.gms.permission.AD_ID</code>:</strong> Erforderlich für das Google Mobile Ads SDK (AdMob) zu Werbe- und Analysezwecken.</li>
         <li><strong><code>android.permission.RECORD_AUDIO</code>:</strong> Wird nur verwendet, wenn der Nutzer aktiv auf das Sprachsuche-/Mikrofonsymbol tippt. Audiodaten werden vom Standard-Spracherkennungsdienst des Geräts verarbeitet und nicht von der App aufgezeichnet oder gespeichert.</li>
-        <li><strong><code>android.permission.SCHEDULE_EXACT_ALARM</code>:</strong> Wird verwendet, um vom Nutzer eingestellte Erinnerungen zum exakt festgelegten Zeitpunkt auszulösen.</li>
-        <li><strong><code>android.permission.USE_FULL_SCREEN_INTENT</code>:</strong> Wird verwendet, um wichtige Erinnerungen (z. B. Medikamenteneinnahme) auch bei gesperrtem Bildschirm im Vollbildmodus anzuzeigen.</li>
-        <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> Wird verwendet, um Benachrichtigungen der App (Erinnerungen und Alarme) anzuzeigen.</li>
+        <li><strong><code>android.permission.SCHEDULE_EXACT_ALARM</code>:</strong> Wird verwendet, um Erinnerungen zum exakt festgelegten Zeitpunkt zu melden.</li>
+        <li><strong><code>android.permission.USE_FULL_SCREEN_INTENT</code>:</strong> Wird verwendet, um sicherzustellen, dass wichtige Erinnerungen auch bei gesperrtem Gerät im Vollbildmodus angezeigt werden.</li>
+        <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> Wird verwendet, um Benachrichtigungen der App anzuzeigen.</li>
     </ul>
 
     <h2>4. Drittanbieter-Dienste</h2>
@@ -50,18 +51,14 @@
         <li><strong>Google AdMob:</strong> Zur Ausspielung von Werbung.</li>
         <li><strong>Google User Messaging Platform (UMP) SDK:</strong> Zur Verwaltung der Nutzereinwilligung für personalisierte Werbung (DSGVO/CCPA-konform).</li>
     </ul>
-    <p>Diese Dienste können Informationen für Zwecke wie personalisierte Werbung, Frequenzbegrenzung und Werbeberichte sammeln. Weitere Details finden Sie in der Datenschutzerklärung von Google.</p>
 
     <h2>5. Datenaufbewahrungsrichtlinie</h2>
-    <p>Alle lokal generierten Daten (App-Listen, Kategorien, Erinnerungen, Einstellungen) verbleiben auf dem Gerät des Nutzers, bis die App deinstalliert wird oder der Nutzer die Daten manuell löscht. Vom Nutzer erstellte Backup-Dateien können auch nach der Deinstallation im Gerätespeicher verbleiben und müssen manuell gelöscht werden.</p>
+    <p>Alle lokal generierten Daten (App-Listen, Kategorien, Erinnerungen, Einstellungen) verbleiben auf dem Gerät des Nutzers, bis die App deinstalliert wird oder der Nutzer die Daten manuell löscht.</p>
 
     <h2>6. Schutz der Privatsphäre von Kindern</h2>
     <p>Die App ist für ein allgemeines Publikum konzipiert und sammelt nicht wissentlich Daten von Kindern unter 13 Jahren oder betreibt Marketing für diese Zielgruppe.</p>
 
-    <h2>7. Änderungen dieser Datenschutzerklärung</h2>
-    <p>Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen.</p>
-
-    <h2>8. Kontakt</h2>
+    <h2>7. Kontakt</h2>
     <p>Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:</p>
     <p><strong>kuroappworks+contact@gmail.com</strong></p>
 
