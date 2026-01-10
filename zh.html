@@ -18,10 +18,10 @@
     <p>本隐私政策适用于由 KURO APP WORKS 开发的移动设备软件应用“ezapfound”（以下简称“本应用”）。本应用是一款简约的桌面启动器，旨在帮助用户整理已安装的应用并创建重要联系人的快速访问快捷方式。</p>
 
     <h2>1. 用户提供的信息</h2>
-    <p>本应用不会在我们的服务器上收集、传输或存储任何个人信息。但是，用户可以手动输入以下信息，这些信息<strong>仅保存在您的本地设备中</strong>：</p>
+    <p>本应用不会在我们的服务器上收集、传输或存储任何个人信息。但是，用户可以输入或选择以下信息，这些信息<strong>仅保存在您的本地设备中</strong>：</p>
     <ul>
-        <li><strong>联系人快捷方式信息：</strong> 用户为创建 SOS/联系人快捷方式而提供的名称和电话号码。此数据仅用于启用“一键拨号”功能。</li>
-        <li><strong>提醒/日历信息：</strong> 用户创建的日程标题、详情、日期、时间及颜色设置等信息。这些数据仅用于提醒通知和日历显示功能。</li>
+        <li><strong>联系人快捷方式信息：</strong> 用户手动输入或从设备的通讯录（地址簿）中选择的姓名和电话号码。这些信息用于“一键拨号”功能以及在主屏幕上放置快捷方式。</li>
+        <li><strong>提醒/日历信息：</strong> 用户创建的日程标题、详情、日期、时间、颜色设置及关联的联系人信息。这些仅用于提醒通知和日历显示功能。</li>
     </ul>
 
     <h2>2. 自动收集的信息 / 非个人数据</h2>
@@ -29,19 +29,20 @@
     <ul>
         <li><strong>已安装应用信息：</strong> 设备上已安装应用的包名、应用标签（显示名称）及安装时间。</li>
         <li><strong>用户设置与偏好：</strong> 分类名称、应用整理/排序、主题/字体大小设置、背景图片 URI 等配置数据。</li>
-        <li><strong>备份数据：</strong> 使用备份功能时，会根据用户的指令在设备存储中创建一个包含分类和应用布局信息的 JSON 文件。</li>
+        <li><strong>备份数据：</strong> 使用备份功能时，会根据用户的指令在设备存储中创建一个包含分类和提醒信息的 JSON 文件。</li>
     </ul>
     <p><strong>上述本地存储的数据绝不会发送到我们的服务器或任何第三方，除非第 4 项所述的第三方服务有所要求。</strong></p>
 
     <h2>3. 使用的权限及其目的</h2>
     <p>本应用需要以下权限，并仅用于所述目的：</p>
     <ul>
+        <li><strong><code>android.permission.READ_CONTACTS</code>:</strong> 用于在创建联系人快捷方式或注册提醒时，从设备的通讯录中轻松选择和获取姓名及电话号码。</li>
         <li><strong><code>android.permission.INTERNET</code>:</strong> 用于展示广告及同意管理。</li>
         <li><strong><code>com.google.android.gms.permission.AD_ID</code>:</strong> 用于 Google Mobile Ads SDK (AdMob) 的广告投放及分析。</li>
         <li><strong><code>android.permission.RECORD_AUDIO</code>:</strong> 仅在用户主动点击语音搜索/麦克风图标时使用。语音数据由设备标准的语音识别服务处理，本应用不会录音或存储。</li>
-        <li><strong><code>android.permission.SCHEDULE_EXACT_ALARM</code>:</strong> 用于在用户指定的准确时间触发提醒通知。</li>
-        <li><strong><code>android.permission.USE_FULL_SCREEN_INTENT</code>:</strong> 用于在设备锁屏状态下也能通过全屏界面确保传达重要提醒（如服药时间）。</li>
-        <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> 用于显示应用的通知（提醒和闹钟）。</li>
+        <li><strong><code>android.permission.SCHEDULE_EXACT_ALARM</code>:</strong> 用于在指定的准确时间通知提醒。</li>
+        <li><strong><code>android.permission.USE_FULL_SCREEN_INTENT</code>:</strong> 用于确保即使在设备锁定的状态下，也能全屏通知重要的提醒。</li>
+        <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> 用于显示应用的通知。</li>
     </ul>
 
     <h2>4. 第三方服务</h2>
@@ -50,18 +51,14 @@
         <li><strong>Google AdMob:</strong> 用于广告投放。</li>
         <li><strong>Google User Messaging Platform (UMP) SDK:</strong> 用于管理个性化广告的用户同意（符合 GDPR/CCPA 标准）。</li>
     </ul>
-    <p>这些服务可能会出于个性化广告投放、频次控制及广告报告等目的收集信息。详情请参阅 Google 的隐私政策。</p>
 
     <h2>5. 数据保留政策</h2>
-    <p>所有本地生成的数据（应用列表、分类、提醒、设置）都将保存在用户设备上，直到本应用被卸载或用户手动删除数据。用户创建的备份文件在卸载后可能仍保留在设备存储中，需要手动删除。</p>
+    <p>所有本地生成的数据（应用列表、分类、提醒、设置）都将保存在用户设备上，直到本应用被卸载或用户手动删除数据。</p>
 
     <h2>6. 儿童隐私</h2>
     <p>本应用面向普通大众设计，不会故意收集 13 岁以下儿童的数据，也不会针对儿童进行市场推广。</p>
 
-    <h2>7. 本隐私政策的变更</h2>
-    <p>我们可能会不时更新隐私政策。如有变更，我们将通过在本页面发布新的隐私政策来通知您。</p>
-
-    <h2>8. 联系我们</h2>
+    <h2>7. 联系我们</h2>
     <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
     <p><strong>kuroappworks+contact@gmail.com</strong></p>
 
