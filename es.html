@@ -18,10 +18,10 @@
     <p>Esta política de privacidad se aplica a la aplicación de software «ezapfound» (en adelante, la «Aplicación») para dispositivos móviles, creada por KURO APP WORKS. La Aplicación es un lanzador de inicio sencillo diseñado para organizar aplicaciones instaladas y crear atajos de acceso rápido para contactos importantes.</p>
 
     <h2>1. Información proporcionada por el usuario</h2>
-    <p>La Aplicación no recopila, transmite ni almacena ninguna información personal en nuestros servidores. Sin embargo, los usuarios pueden introducir manualmente la siguiente información, que se <strong>almacena únicamente de forma local en su dispositivo</strong>:</p>
+    <p>La Aplicación no recopila, transmite ni almacena ninguna información personal en nuestros servidores. Sin embargo, los usuarios pueden introducir o seleccionar la siguiente información, que se <strong>almacena únicamente de forma local en su dispositivo</strong>:</p>
     <ul>
-        <li><strong>Información de atajos de contacto:</strong> Nombres y números de teléfono proporcionados por el usuario con el fin de crear atajos de SOS/contacto. Estos datos se utilizan exclusivamente para habilitar la función de «Marcación con un toque».</li>
-        <li><strong>Información de recordatorios/calendario:</strong> Títulos, detalles, fechas, horas y ajustes de color para las tareas creadas por el usuario. Estos datos se utilizan únicamente para las funciones de notificación de recordatorios y visualización del calendario.</li>
+        <li><strong>Información de atajos de contacto:</strong> Nombres y números de teléfono introducidos manualmente por el usuario o seleccionados de la agenda de contactos del dispositivo. Se utilizan para la función de «Marcación con un toque» y para colocar atajos en la pantalla de inicio.</li>
+        <li><strong>Información de recordatorios/calendario:</strong> Títulos, detalles, fechas, horas, ajustes de color e información de contacto asociada para los planes creados por el usuario. Estos se utilizan únicamente para las funciones de notificación de recordatorios y visualización del calendario.</li>
     </ul>
 
     <h2>2. Información recopilada automáticamente / Datos no personales</h2>
@@ -29,19 +29,20 @@
     <ul>
         <li><strong>Información de aplicaciones instaladas:</strong> Nombres de paquetes, etiquetas de aplicación (nombres para mostrar) y fechas/horas de instalación de las aplicaciones en el dispositivo.</li>
         <li><strong>Ajustes y preferencias del usuario:</strong> Datos de configuración como nombres de categorías, organización/orden de apps, ajustes de tema/tamaño de fuente y URIs de imágenes de fondo.</li>
-        <li><strong>Datos de copia de seguridad:</strong> Al usar la función de copia de seguridad, se crea un archivo JSON en el almacenamiento del dispositivo con la información de categorías y ubicación de apps, basado en las instrucciones del usuario.</li>
+        <li><strong>Datos de copia de seguridad:</strong> Al usar la función de copia de seguridad, se crea un archivo JSON en el almacenamiento del dispositivo con información de categorías y recordatorios, basado en las instrucciones del usuario.</li>
     </ul>
     <p><strong>Los datos almacenados localmente mencionados anteriormente nunca se envían a nuestros servidores ni a terceros, excepto cuando lo requieran los servicios de terceros descritos en la Sección 4.</strong></p>
 
     <h2>3. Permisos utilizados y sus finalidades</h2>
     <p>La Aplicación requiere los siguientes permisos y los utiliza únicamente para los fines indicados:</p>
     <ul>
+        <li><strong><code>android.permission.READ_CONTACTS</code>:</strong> Se utiliza para seleccionar y recuperar fácilmente nombres y números de teléfono de la agenda del dispositivo al crear atajos de contacto o registrar recordatorios.</li>
         <li><strong><code>android.permission.INTERNET</code>:</strong> Necesario para mostrar anuncios y gestionar el consentimiento.</li>
         <li><strong><code>com.google.android.gms.permission.AD_ID</code>:</strong> Necesario para el SDK de anuncios de Google (AdMob) con fines publicitarios y de análisis.</li>
         <li><strong><code>android.permission.RECORD_AUDIO</code>:</strong> Se utiliza solo cuando el usuario toca voluntariamente el icono de búsqueda por voz/micrófono. Los datos de audio son procesados por el servicio de reconocimiento de voz estándar del dispositivo y la Aplicación no los graba ni almacena.</li>
-        <li><strong><code>android.permission.SCHEDULE_EXACT_ALARM</code>:</strong> Se utiliza para activar los recordatorios configurados por el usuario en la hora exacta especificada.</li>
-        <li><strong><code>android.permission.USE_FULL_SCREEN_INTENT</code>:</strong> Se utiliza para mostrar alertas a pantalla completa para recordatorios importantes (ej: toma de medicación), garantizando que se comuniquen incluso con el dispositivo bloqueado.</li>
-        <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> Se utiliza para mostrar notificaciones de la aplicación (recordatorios y alarmas).</li>
+        <li><strong><code>android.permission.SCHEDULE_EXACT_ALARM</code>:</strong> Se utiliza para notificar recordatorios en la hora exacta especificada.</li>
+        <li><strong><code>android.permission.USE_FULL_SCREEN_INTENT</code>:</strong> Se utiliza para garantizar que los recordatorios importantes se notifiquen a pantalla completa incluso cuando el dispositivo está bloqueado.</li>
+        <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> Se utiliza para mostrar notificaciones de la aplicación.</li>
     </ul>
 
     <h2>4. Servicios de terceros</h2>
@@ -50,18 +51,14 @@
         <li><strong>Google AdMob:</strong> Para la entrega de anuncios.</li>
         <li><strong>Google User Messaging Platform (UMP) SDK:</strong> Para gestionar el consentimiento del usuario para publicidad personalizada (cumple con GDPR/CCPA).</li>
     </ul>
-    <p>Estos servicios pueden recopilar información para fines como la entrega de anuncios personalizados, limitación de frecuencia e informes publicitarios. Para más detalles, consulte la política de privacidad de Google.</p>
 
     <h2>5. Política de retención de datos</h2>
-    <p>Todos los datos generados localmente (listas de apps, categorías, recordatorios, ajustes) permanecen en el dispositivo del usuario hasta que la Aplicación se desinstala o el usuario elimina los datos manualmente. Los archivos de copia de seguridad pueden permanecer en el almacenamiento tras la desinstalación y deben eliminarse manualmente.</p>
+    <p>Todos los datos generados localmente (listas de apps, categorías, recordatorios, ajustes) permanecen en el dispositivo del usuario hasta que la Aplicación se desinstala o el usuario elimina los datos manualmente.</p>
 
     <h2>6. Privacidad infantil</h2>
     <p>La Aplicación está diseñada para un público general y no recopila datos de niños menores de 13 años a sabiendas, ni se dirige a ellos con fines de marketing.</p>
 
-    <h2>7. Cambios en esta política de privacidad</h2>
-    <p>Podemos actualizar nuestra política de privacidad periódicamente. Le notificaremos cualquier cambio publicando la nueva política de privacidad en esta página.</p>
-
-    <h2>8. Contacto</h2>
+    <h2>7. Contacto</h2>
     <p>Si tiene preguntas sobre esta política de privacidad, contáctenos en:</p>
     <p><strong>kuroappworks+contact@gmail.com</strong></p>
 
